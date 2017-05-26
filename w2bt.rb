@@ -13,7 +13,15 @@ def num_to_string(numbers)
   end
 end
 
-puts "Enter number: "
-numbers = gets.to_i.abs
+def magic_num_four
+puts "Enter number or type exit: "
+choice = gets.chomp
+  if choice == 'exit'
+    exit
+  end
+numbers = choice.to_i.abs
 num_to_string(numbers)
-puts " And four is a magic number"
+puts "And four is a magic number"
+magic_num_four
+end
+magic_num_four
